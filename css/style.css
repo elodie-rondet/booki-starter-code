@@ -1073,6 +1073,11 @@ margin-top:19%;
 
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {	
+		div.main-container {
+	padding: 0px;
+	}
+	
+	
 	div.filtre-economique, div.filtre-romantique, div.filtre-pepites {
     width: 135.25px;
     height: 47.5px;
@@ -1422,7 +1427,7 @@ line-height: 20px;
 	margin-top:18%;
 	}
 	
-	.main-container {
+	div.main-container {
 	padding: 0px;
 	}
 	

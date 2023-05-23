@@ -734,6 +734,7 @@ flex: none;
 order: 0;
 align-self: stretch;
 flex-grow: 0;
+object-fit: cover;
 	
 }
 
@@ -762,12 +763,11 @@ line-height: 26px;
 display: flex;
 margin-top: 25.26px;
 width: 369px;
-height: 146px;
+max-height: 146px;
 }
 
 .populaires-cards img {
-width: 123px;
-height: 144px;
+max-width: 123px;
 border-top-left-radius: 20px;
 border-bottom-left-radius: 20px;
 }
@@ -1052,16 +1052,17 @@ right:10%;
 }
 
 div.activites {
-width: 1280px;
-height: 439px;
-max-width:100%;	
+width: 100%;
+height: auto;
+max-width:1280px;
+max-height: 439px;
 }
 
 img.img-activites {
 /* Rectangle 27 */
-width: 297.5px;
+width: 100%;
 height: 380px;	
-max-width:100%;	
+max-width:297.5px;
 }
 
 
@@ -1069,8 +1070,6 @@ footer {
 margin-top:19%;
 }
 }
-
-
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {	
 		div.main-container {
@@ -1105,7 +1104,7 @@ border-radius: 20px;
 	
 }
 	.card-title {
-    font-size: 16px;
+    font-size: 15.5px;
     margin-top: 0px;
     margin-bottom: 0px;
 }
@@ -1167,17 +1166,6 @@ border-radius: 20px;
 	margin-left:-10%;
 	}
 	
-	.populaires-cards {
-    width: 648px;
-    height: 189px;
-	gap:20px;
-	flex-direction: row;
-	}
-	
-	.populaires {
-    height: 252px;
-	}
-	
 	.hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
@@ -1191,43 +1179,69 @@ border-radius: 20px;
 	.card, .card-hebergements {
     width: 100%;
     height: auto;
-}
-	
+	}
+		
 	div.activites {
-    margin-top: 5%;
-	margin-bottom: 5%;
+	margin-top: 5%;
+	margin-bottom: 5%;		
+	}
 	
-}
-
-.populaires-cards img {
-    width: 91px;
+	/* Populaires  */
+	.populaires-cards img {
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	max-width: 100%;
+	max-height: auto;
+	}
+		
+	.populaires {
+	width: 100%;
+	height: auto;
+	}
+	
+	.populaires-cards .card {
+	display: flex;
+	margin-top: 25.26px;
+	max-height: 136px;
+    max-width: 100%;
+	min-width: 0px;
+	width: 100%;
     height: auto;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-}
+	}
+	
+	.populaires-cards {
+	width: 648px;
+	height: auto;
+	gap:20px;
+	flex-direction: row;
+	}
 	
 	.populaires {
-    width: 693px;
-    height: 220px;
-}
+	height: auto;
+	}
+	
+	img#emile-guillemot {
+	content: url('../images/hebergements/emile-guillemot-tablette.jpg');	
+	}
+	
+	img#febrian-zakaria2 {
+	content: url('../images/hebergements/febrian-zakaria2-tablette.jpg');	
+	}
+	
+	img#aw-creative {
+	content: url('../images/hebergements/aw-creative-tablette.jpg');	
+	}
 
-.populaires-cards .card {
-    display: flex;
-    margin-top: 25.26px;
-    width: 205.5px;
-    height: 106px;
-}
-
-footer {
+	footer {
     width: 100%;
-}
+	}
 	/* menu  */
 	
 	/* hébergements  */
     .hebergements-and-populaires {
-        flex-direction: column;
-		width: 100%;
-		align-items: normal;
+    flex-direction: column;
+	width: 100%;
+	align-items: normal;
 
     }
 	
@@ -1250,18 +1264,18 @@ footer {
 	/* Économique */
 	font-family: 'Raleway';
 	font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 20px;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 20px;
 	}
 	
 	button#familial {
 	/* Économique */
 	font-family: 'Raleway';
 	font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 20px;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 20px;
 	}
 	
 	/* infobar  */
@@ -1272,8 +1286,10 @@ line-height: 20px;
 
 	/* hébergements  */
 	img.img-hebergements {
-		width: 100%;
-		object-fit: cover;
+	width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 124px;
 	}
     .hebergements,.populaires{
         width: 100%;
@@ -1296,27 +1312,23 @@ line-height: 20px;
 
 	/* populaires   */
     .populaires-cards {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-		width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+	width: 100%;
     }
-
-    .populaires-cards .card {
-    width: 264px;
-	height:136px;
-    }
+	
+	#fa-star-1, #fa-star-2, #fa-star-3,#fa-star-4, #fa-star-5, #fa-star-6, #fa-star-7,#fa-star-8, #fa-star-9, #fa-star-10, #fa-star-11,#fa-star-12 {
+	width: 12px;
+	height:12px;
+	}
 
     .populaires-cards .card-title {
-        font-size: 16px;
+        font-size: 12px;
     }
 
     .populaires-cards .card-subtitle {
         font-size: 13px;
-    }
-	
-	.populaires{
-        height: 252px;
     }
 	
 	.card-rating {
@@ -1332,16 +1344,28 @@ line-height: 20px;
     width: 100%;
 	}
 	section.activites-ville {
-    	margin-top: 5%;
 		margin-left:auto;
 		margin-right:auto;
+	}
+	
+	img#vieux-port {
+	content: url('../images/activites/port-marseille-1024.jpg');	
+	}
+	img#calanques {
+	content: url('../images/activites/calanques-1024.jpg');	
+	}
+	img#fort-pomegues {
+	content: url('../images/activites/fort-domegue-1024.jpg');	
+	}
+	img#notre-dame-de-la-garde {
+	content: url('../images/activites/notre-dame-de-la-garde-1024.jpg');	
 	}
 	
 	
 	div.activites {
     width: 648px;
     margin-top: 20%;
-}
+	}
 	
 	.card-title-activites-calanques {
     padding-top: 0%;
@@ -1357,17 +1381,16 @@ line-height: 20px;
 	padding-bottom: 4%;
 	}
 	
-
-
 	h2.section-title-activites {
     margin-top: 0%;
 	margin-bottom: 0%;
 	margin-left:2%;
-}
+	}
 	
-	img.img-activites{
-	width: 193.5px;
-	height: 200px;
+	img.img-activites{	
+	max-width: 100%;
+	height: auto;
+	max-height: 200px;
 	min-width: 0px;
 	object-fit: cover;
 	}

@@ -387,6 +387,7 @@ flex: none;
 order: 0;
 flex-grow: 0;
 display:flex;
+margin-top:3%;
 }
 
 button#economique, button#familial, button#romantique, button#pepites {
@@ -1074,10 +1075,9 @@ margin-top:19%;
 }
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {	
-		div.main-container {
+	div.main-container {
 	padding: 0px;
 	}
-	
 	
 	div.filtre-economique, div.filtre-romantique, div.filtre-pepites {
     width: 135.25px;
@@ -1096,15 +1096,19 @@ margin-top:19%;
     line-height: 16px;
     margin-top: 8px;
     margin-bottom: 8px;
-}
+	}
 
-article.card-activites {
+	article.card-activites {
 	/* Shadow/Card */
-
-filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-border-radius: 20px;
+	filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+	border-radius: 20px;	
+	}
 	
-}
+	div.conteneur-filter-bar {
+    margin-top: 17px;
+	margin-bottom: 17px;
+	}
+	
 	.card-title {
     font-size: 15.5px;
     margin-top: 0px;
@@ -1281,7 +1285,7 @@ border-radius: 20px;
 	
 	/* infobar  */
 	div.infobar {
-    margin-top: 95px;
+    margin-top: 90px;
 	}
 	
 

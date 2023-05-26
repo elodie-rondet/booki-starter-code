@@ -1079,6 +1079,10 @@ margin-top:19%;
 	div.main-container {
 	padding: 0px;
 	}
+
+    p.description-annexe {
+        margin-bottom: 3%;
+    }
 	
 	div.filtre-economique, div.filtre-romantique, div.filtre-pepites {
     width: 135.25px;

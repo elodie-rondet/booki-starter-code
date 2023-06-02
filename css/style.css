@@ -56,11 +56,11 @@ align-items: flex-end;
 padding: 0px;
 gap: 68px;
 
-position: absolute;
+position: relative;
 height: 35px;
-right:15%;
 border: none;
 margin-top: 0.5%;
+margin-right: 5%;
 }
 
 .logo {
@@ -954,6 +954,11 @@ font-size: 18px;
 line-height: 21px;
 }
 
+footer {
+    width: 1340px;
+    height: 163px;
+}
+
 footer p {
 /* Footer/Link */
 
@@ -970,89 +975,16 @@ footer a {
 }
 
 
-/* Le code ci-dessous correspond à la version responsive uniquement */
 
-/****** Media queries ***********/
-@media (min-width: 1441px) {
-	footer {
-		width: 1340px;
-		height: 163px;
-	}
-	
-	body {
-		max-width:1440px;
-		margin-left:auto;
-		margin-right:auto;
-	}
-	
-	/****** Hebergements And Populaires ***********/
-	.hebergements-and-populaires {	
-		width: 1340px;
-		height:614px;
-	}	
-	
-	.hebergements {
-		width: 871px;
-		height: 614px;
-		padding: 30px;
-		gap: 30px;
-	}
-	
-	img.img-hebergements {
-		width: 240px;
-		height: 114px;
-	}	
-	
-	.populaires {
-		width: 429px;
-		height: 614px;
-		padding:30px;
-	}
-	
-	.card, .card-hebergements {
-    width: 240px;
-    height: 197.25px;
-}
-	
-	.populaires-cards .card {
-		width: 369px;
-		height: 146px;
-	}
 
-	.populaires-cards img {
-		width: 123px;
-		height: 146px;
-	}
-	
-	.card-hebergement {
-	width: 250.33px;
-	height: 207.25px;
-}
-
-.card-title {
-    font-size: 16px;
-	margin-top:4px;
-}
-
-.card-subtitle {
-margin-top:8px;
-margin-bottom:8px;
-}
-}
-
-/* Desktop */
-@media (min-width: 1025px) and (max-width: 1440px) {
 body {
-margin-left: 40px;
-margin-right: 40px;
+    max-width:1440px;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .logo {
     margin-left: -1%;
-}
-
-.menu {
-right:10%;	
 }
 
 div.activites {
@@ -1073,12 +1005,17 @@ max-width:297.5px;
 footer {
 margin-top:19%;
 }
-}
+
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {	
 	div.main-container {
 	padding: 0px;
 	}
+
+    .menu {
+        right: 11%;
+        margin-right: 0%;
+    }
 
     p.description-annexe {
         margin-bottom: 3%;
@@ -1202,6 +1139,7 @@ margin-top:19%;
 	border-top-left-radius: 20px;
 	border-bottom-left-radius: 20px;
 	max-width: 34%;
+	max-height: auto;
 	}
 		
 	.populaires {

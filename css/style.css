@@ -1404,6 +1404,7 @@ margin-top:19%;
 	nav.menu {
 	/* Auto layout */
 	display: flex;
+    position: absolute;
 	flex-direction: column;
 	align-items: center;
 	padding-top: 20px;

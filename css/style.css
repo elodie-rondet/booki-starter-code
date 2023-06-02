@@ -14,12 +14,39 @@
 }
 
 body {
-    display: flex;
-    justify-content: center;
-	margin-left:4.5%;
-	aspect-ratio: 1 / 1;
+display: flex;
+justify-content: center;
+max-width:1440px;
+margin-left:auto;
+margin-right:auto;
 }
 
+
+header {
+/* Header */
+width: 100%;
+height: 79px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+}
+.main-container {
+width: 100%;
+padding: 0 50px;
+}
+
+.logo {
+margin-left: -1%;
+position: absolute;
+width: 61.09px;
+height: 19px;
+top: 30px;
+}
+
+/* menu  */
 .menu menu {
 	/* Buttons */
 /* Auto layout */
@@ -61,13 +88,6 @@ height: 35px;
 border: none;
 margin-top: 0.5%;
 margin-right: 5%;
-}
-
-.logo {
-position: absolute;
-width: 61.09px;
-height: 19px;
-top: 30px;
 }
 
 li.menu-item-hebergement {
@@ -171,18 +191,7 @@ li.menu-item-hebergement a, li.menu-item-activites a {
 	text-decoration: none;
 }
 
-header {
-/* Header */
-width: 100%;
-height: 79px;
-
-/* Inside auto layout */
-
-flex: none;
-order: 0;
-align-self: stretch;
-flex-grow: 0;
-}
+/* Description  */
 
 h3.description-site {
 /* Trouvez votre hébergement pour des vacances de rêve */
@@ -218,6 +227,8 @@ order: 1;
 align-self: stretch;
 flex-grow: 0;
 }
+
+/* Fonctions recherche  */
 
 button.button-search {
 /* Button/Search/Desktop */
@@ -564,11 +575,7 @@ margin-left:34px;
 	
 }
 
-.main-container {
-    width: 100%;
-    padding: 0 50px;
-
-}
+/****** Hebergements And Populaires ***********/
 
 .section-title {
     margin: 0;
@@ -625,7 +632,6 @@ margin-left:34px;
     color: var(--main-bg-color)
 }
 
-/****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
 display: flex;
 justify-content: space-between;
@@ -886,13 +892,11 @@ max-width:100%;
 width:0%;
 }
 
-
-
 img.img-activites {
 /* Rectangle 27 */
 width: 100%;
 height: 380px;
-min-width: 297.5px;
+width: 297.5px;
 background: url(reno-laithienne.jpg);
 border-radius: 20px 20px 0px 0px;
 
@@ -908,6 +912,10 @@ max-width:100%;
 div.activites  {
 margin-left:1.3%;
 gap:30px;
+width: 100%;
+height: auto;
+max-width:1280px;
+max-height: 439px;
 }
 
 
@@ -973,34 +981,6 @@ footer a {
 	text-decoration:none;
 	color: #000000;	
 }
-
-
-
-
-body {
-    max-width:1440px;
-    margin-left:auto;
-    margin-right:auto;
-}
-
-.logo {
-    margin-left: -1%;
-}
-
-div.activites {
-width: 100%;
-height: auto;
-max-width:1280px;
-max-height: 439px;
-}
-
-img.img-activites {
-/* Rectangle 27 */
-width: 100%;
-height: 380px;	
-max-width:297.5px;
-}
-
 
 footer {
 margin-top:19%;
